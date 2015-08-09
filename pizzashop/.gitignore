@@ -1,6 +1,6 @@
 /target
 
-/src/main/resources/META-INF/spring/database.properties
+database.properties
 
 *.class
 
