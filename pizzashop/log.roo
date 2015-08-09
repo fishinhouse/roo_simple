@@ -23,3 +23,4 @@ field set --fieldName pizzas --type ~.domain.Pizza
 web mvc setup
 web mvc all --package ~.web
 security setup
+// Spring Roo 2.0.0.M1 [rev 33e5d76] log closed at 2015-08-09 14:39:33
