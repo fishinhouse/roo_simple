@@ -20,3 +20,5 @@ field string --fieldName address --notNull
 field number --fieldName total --type double --notNull 
 field date --fieldName deliveryDate --type java.util.Date --notNull 
 field set --fieldName pizzas --type ~.domain.Pizza
+web mvc setup
+web mvc all --package ~.web
