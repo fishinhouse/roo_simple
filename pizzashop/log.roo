@@ -22,3 +22,4 @@ field date --fieldName deliveryDate --type java.util.Date --notNull
 field set --fieldName pizzas --type ~.domain.Pizza
 web mvc setup
 web mvc all --package ~.web
+security setup
