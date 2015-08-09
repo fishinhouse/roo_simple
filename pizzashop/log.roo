@@ -4,3 +4,19 @@ project setup --topLevelPackage com.pizzashop --projectName pizzashop --java 7 -
 // Spring Roo 2.0.0.M1 [rev 33e5d76] log opened at 2015-08-09 11:39:58
 hint
 jpa setup --database MYSQL --provider HIBERNATE 
+hint
+entity jpa --class ~.domain.Base 
+field string --fieldName name --notNull
+entity jpa --class ~.domain.Topping
+field string --fieldName name --notNull 
+entity jpa --class ~.domain.Pizza
+field string --fieldName name --notNull 
+field number --fieldName price --type double --notNull 
+field set --fieldName Toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity jpa --class ~.domain.PizzaOrder
+field string --fieldName name --notNull 
+field string --fieldName address --notNull 
+field number --fieldName total --type double --notNull 
+field date --fieldName deliveryDate --type java.util.Date --notNull 
+field set --fieldName pizzas --type ~.domain.Pizza
